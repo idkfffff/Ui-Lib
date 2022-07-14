@@ -1505,6 +1505,11 @@ function lib:Window(text, preset, closebind)
 
 			Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
 		end
+		
+		local function Set(Needer,text)
+			Needer.Text = text
+		end
+		
 		function tabcontent:Textbox(text,disapper, callback)
 			local Textbox = Instance.new("Frame")
 			local TextboxCorner = Instance.new("UICorner")
